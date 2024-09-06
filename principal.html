@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conheça mais sobre o Miguel da supra</title>
+<link href="AboutPageAssets/styles/aboutPageStyle.css" rel="stylesheet" type="text/css">
+<style>
+	.fundo{
+		background-color: whitesmoke;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		
+	}	
+	.contador {
+            font-size: 2em;
+            color: #08F8ED;
+	}
+</style>
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
+</head>
+
+<body class="fundo">
+<div class="contador">Visitas: <span id="visitas">0</span></div>
+
+    <script>
+        // Função para obter o número de visitas do localStorage
+        function obterVisitas() {
+            return localStorage.getItem('visitas') || 0;
+        }
+
+        // Função para incrementar o número de visitas
+        function incrementarVisitas() {
+            let visitas = obterVisitas();
+            visitas++;
+            localStorage.setItem('visitas', visitas);
+            document.getElementById('visitas').textContent = visitas;
+        }
+
+        // Incrementa o número de visitas ao carregar a página
+        incrementarVisitas();
+    </script>	
+<!-- Header content -->
+<header>
+  <div class="profilePhoto"> 
+    <!-- Profile photo --> 
+    <img src="img/456561211_923900383086124_6243813209742070058_n.jpg" alt="Miguel da Supranet" width="250"> 
+  </div>
+  <!-- Identity details -->
+  <section class="profileHeader">
+    <h1 style="color: black">MIGUEL DA SUPRANET</h1>
+    <h3 style="color: black">CANDIDATO A VEREADOR POR BOA VISTA PELO NÚMERO 22000</h3>
+    <hr>
+    <p>Miguel, nascido em Petrolina (PE), mudou-se para Boa Vista (RR) em 1993 com sua família trazido pelo Saudoso Ottomar de Sousa Pinto, Seu Pai técnico agrícola. Ele cresceu no Projeto Passarão, um programa de incentivo à produção agrícola.
+	<p>Aos 14 anos, Miguel deixou a fazenda para buscar independência, trabalhando como feirante e conciliando o trabalho com os estudos. Ele se dedicou a diversos empreendimentos, como lavagem de carros, cobrador de ônibus, recepcionista de hotel e proprietário de uma lan house.</p>
+	<p>Atualmente, Miguel é dono da SUPRANET, uma empresa de internet fibra ótica. Ele é técnico de suporte em informática e se destaca por sua capacidade de conquistar clientes com sua simpatia.</p>  
+	<p>Miguel é um defensor de causas sociais e participa ativamente de eventos da Câmara Municipal, defendendo pautas anticorrupção, antidrogas, anticrimes e antiaborto. Ele é casado com Isabel há 7 anos e tem dois filhos, Lucas e Bianca.</p>
+	 
+  </section>
+  <!-- Links to Social network accounts -->
+  <aside class="socialNetworkNavBar">
+      <h2 class="sectionTitle" style="color: black">Propostas de candidato</h2>
+    <div class="section1Content" id="propostas">
+      <script>
+		var conteudo = "<iframe src='propostas.php' width='630px' height='630px' style='border:none;'/>";
+		var prop = document.querySelector("#propostas");
+		prop.innerHTML = conteudo;  
+	  </script>
+		<br>
+    </div> 	
+	  <div class="socialNetworkNav"> 
+      <!-- Add a Anchor tag with nested img tag here --> 
+      
+	  <table>
+		<tr>
+			<td colspan="3" align="center" style="color: blue; font-size: 28px">Redes Sociais</td>  
+		</tr>  
+		<tr>
+			<td><a href="https://www.facebook.com/migueldasupranet/" target="_blank"><img src="img/FB.png" alt="facebook" width="100"></a></td>  
+			<td><a href="https://www.instagram.com/migueldasupranet" target="_blank"><img src="img/instagram.jpeg"  alt="instagram" width="100"></a></td>
+			<td><a href="https://wa.me/5595991644629"><img src="img/whatsapp.jpeg"  alt="whatsapp" width="100" target="_blank"></a></td>
+		</tr>
+	  </table>
+	  <br> 
+	</div>
+  </aside>
+</header>
+<!-- content -->
+<section class="mainContent"> 
+  <!-- Contact details -->
+  <section class="section1">
+    <div class="section1Content">
+		<h3 align="center" style="color: blue">VIDEO PROMOCIONAL<br><video src="promo/457038737_1287227992266143_272698629030229476_n.mp4" controls></video>  </h3>
+	</div>  
+  </section>
+  	
+  <!-- Previous experience details -->
+  <section class="section2">
+    <h2 class="sectionTitle" style="color: black">OUTRAS PROPOSTAS</h2>
+    <!-- First Title & company details  -->
+    <article class="section2Content">
+      <p class="sectionContent" style="color: black"> Gostaria de sugerir alguma proposta? nos informe mandando mensagem para o candidato no direct do instagram, facebook ou whatsapp. Gostariamos do seu voto de confiança que juntos faremos valer a pena o nosso empenho pelo bem-estar do município e seriedade na aplicação dos recursos públicos.</p>
+      <p class="sectionContent" style="color: black">Faça parte do nosso grupo de eleitores interagindo conosco e informe-se das atividades do vereador Miguel. <a href="https://chat.whatsapp.com/JHPPuzbpWdeHEhMrZd1vkU" style="color: cadetblue">Link do grupo aqui</a></p>
+    </article>
+    <!-- Replicate the above Div block to add more title and company details --> 
+  </section>
+</body>
+</html>
